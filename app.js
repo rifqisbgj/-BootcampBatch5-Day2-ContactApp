@@ -5,8 +5,6 @@ const readline = require('readline').createInterface({
 });
 const Validator = require('validator');
 
-const data = [];
-
 readline.question(`Apa namamu? `, nameUser => {
     readline.question(`Apa emailmu? `, emailUser => {
         const isEmailValid = Validator.isEmail(emailUser);
